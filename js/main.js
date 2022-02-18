@@ -66,6 +66,18 @@ $(document).ready(function () {
 
 	// 
 
+	for (let i = 0; i < 2; i++){
+        $('.project_modal_click').eq(i).click(function(){
+            $('.project_modal').eq(i).fadeIn(1000);        
+        });
+    }
+
+	for (let i = 0; i < 2; i++){
+        $('.project_modal_img img').eq(i).click(function(){
+            $('.project_modal').fadeOut(500);         
+        });
+    }
+
 
 	for (let i = 0; i < 8; i++){
         $('.click_modal').eq(i).click(function(){
